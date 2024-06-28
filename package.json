@@ -1,0 +1,28 @@
+{
+  "name": "flask-ts-template",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Gustavo Passarella",
+  "license": "ISC",
+  "scripts": {
+    "dev": "concurrently \"npm run webpack:watch\" \"gulp sass-watch\" \"poetry run python src/main.py\" --raw --kill-others",
+    "webpack:watch": "webpack --watch",
+    "lint": "eslint src/ts --ext .ts",
+    "lint:fix": "eslint src/ts --ext .ts --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.14.1",
+    "concurrently": "^7.0.0",
+    "eslint": "^8.57.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.6",
+    "ts-loader": "^9.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  }
+}
